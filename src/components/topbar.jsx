@@ -29,7 +29,7 @@ const TopBar = () => {
             <input
               type="text"
               placeholder="Search..."
-              className="bg-white w-80"
+              className="bg-white w-80 outline-transparent"
             />
           </div>
 

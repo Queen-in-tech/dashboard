@@ -24,7 +24,7 @@ const SideBar = ({ onchange, checked }) => {
   return (
     <div>
       <div
-        className={`z-50 w-screen flex flex-1 px-8 lg:flex-col lg:sticky relative lg:top-0 bottom-0 lg:left-0 py-2 lg:py-4 lg:px-0  bg-[#F7F8FA] border border-r border-[#EBECF2] text-[#A8A8A8] transition-all  lg:min-h-screen lg:w-[4rem] lg:min-w-[4rem]`}
+        className={`z-50 w-screen flex flex-1 px-8 lg:flex-col fixed lg:sticky  lg:top-0 bottom-0 lg:left-0 py-4 lg:py-4 lg:px-0  bg-[#F7F8FA] border border-r border-[#EBECF2] text-[#A8A8A8] transition-all  lg:min-h-screen lg:w-[4rem] lg:min-w-[4rem]`}
       >
         <div
           className={`text-[#393939] ${"hidden md:flex items-center justify-center "}   `}
@@ -43,7 +43,7 @@ const SideBar = ({ onchange, checked }) => {
                     key={index}
                   >
                     <div
-                      className={`bg-black h-1 w-7 flex justify-center items-center ${
+                      className={`bg-black h-1 w-7 flex justify-center items-center rounded-b-full ${
                         index == 0 ? "block lg:hidden absolute top-0" : "hidden"
                       }`}
                     ></div>

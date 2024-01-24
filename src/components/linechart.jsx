@@ -60,13 +60,41 @@ const Linechart = () => {
     },
     colors: [
       function ({ value }) {
-        if (value === maxValue) {
-          return "#34CAA5";
-        } else {
+        if (value !== maxValue) {
           return "#34CAA51A";
+        } else {
+          return "rgba(52, 202, 165, 1)";
         }
       },
     ],
+    // fill: {
+    //   type: "gradient",
+    //   gradient: {
+    //     shadeIntensity: 1,
+    //     opacityFrom: 1,
+    //     opacityTo: 0.5,
+    //     type: "vertical",
+    //     gradientToColors: ["#34CAA5"],
+    //     stops: [0, 100],
+    //     colorStops: [
+    //       {
+    //         offset: 0,
+    //         color: "#34CAA5",
+    //         opacity: 1,
+    //       },
+    //       {
+    //         offset: 75,
+    //         color: "#34CAA51A",
+    //         opacity: 1,
+    //       },
+    //       {
+    //         offset: 100,
+    //         color: "#34CAA51A",
+    //         opacity: 0.8,
+    //       },
+    //     ],
+    //   },
+    // },
     dataLabels: {
       enabled: false,
     },
