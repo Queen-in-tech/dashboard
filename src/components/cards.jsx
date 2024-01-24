@@ -25,7 +25,9 @@ const Cards = ({ img, red, title, price }) => {
           <img src={red ? "red arrow.svg" : "green arrow.svg"} alt="" />
           <span>23.5%</span>
         </div>
-        <p className="text-[#606060] text-xs text-nowrap">vs. previous month</p>
+        <p className="text-[#606060] text-xs text-nowrap md:text-wrap">
+          vs. previous month
+        </p>
       </div>
     </div>
   );

@@ -52,31 +52,27 @@ const Dashboard = () => {
         <div className="flex flex-col gap-[20px]">
           <Range
             title="Book Bazaar"
-            w="50"
+            className="bg-[#6160DC] h-[12px]  w-[50%] rounded-2xl"
             price="2,500,000"
             range="15"
-            color="#6160DC"
           />
           <Range
             title="Artisan Aisle"
-            w="30"
             price="1,800,000"
             range="10"
-            color="#54C5EB"
+            className="bg-[#54C5EB] h-[12px]  w-[30%] rounded-2xl"
           />
           <Range
             title="Toy Troop"
-            w="15"
             price="1,200,000"
             range="8"
-            color="#FFB74A"
+            className="bg-[#FFB74A] h-[12px]  w-[15%] rounded-2xl"
           />
           <Range
             title="Xstore"
-            w="9"
             price="900,000"
             range="5"
-            color="#6160AD"
+            className="bg-[#6160AD] h-[12px]  w-[9%] rounded-2xl"
           />
           {/* <Range title="Book Bazaar" w="50" price="2,500,000" range="15" /> */}
         </div>
