@@ -11,7 +11,11 @@ function App() {
     setIsDarkMode(!isDarkMode);
   };
   return (
-    <div className="h-full bg-[#FAFAFA]">
+    <div
+      className={`"h-full  ${
+        isDarkMode ? "bg-black text-white" : "bg-[#FAFAFA]"
+      }"`}
+    >
       <div className="w-full flex">
         <div className="hidden lg:flex">
           <SideBar onchange={toggleDarkMode} checked={isDarkMode} />
