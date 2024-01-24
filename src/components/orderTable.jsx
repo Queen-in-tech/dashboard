@@ -63,7 +63,7 @@ const OrderTable = () => {
     },
   ];
   return (
-    <d className="overflow-x-auto border-b border-gray-200 ">
+    <div className="overflow-x-auto border-b border-gray-200 ">
       <table className="min-w-full divide-y divide-gray-200">
         <thead className="bg-gray-50">
           <tr>
@@ -153,7 +153,7 @@ const OrderTable = () => {
             })}
         </tbody>
       </table>
-    </d>
+    </div>
   );
 };
 

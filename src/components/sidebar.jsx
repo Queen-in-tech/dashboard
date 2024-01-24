@@ -33,7 +33,7 @@ const SideBar = ({ onchange, checked }) => {
         </div>
         <div className="h-fit lg:flex-1 flex justify-center w-full lg:mt-7 lg:relative">
           <div className="flex gap-8 lg:block lg:justify-center">
-            <ul className="flex flex-nowrap justify-center text-sm lg:flex-col items-center gap-6 lg:mb-5">
+            <ul className="flex flex-nowrap justify-center text-sm lg:flex-col items-center gap-10 md:gap-6 lg:mb-5">
               {NAV_ITEMS.map((item, index) => (
                 <>
                   <li
@@ -43,7 +43,7 @@ const SideBar = ({ onchange, checked }) => {
                     key={index}
                   >
                     <div
-                      className={`bg-black h-1 w-5 flex justify-center items-center ${
+                      className={`bg-black h-1 w-7 flex justify-center items-center ${
                         index == 0 ? "block lg:hidden absolute top-0" : "hidden"
                       }`}
                     ></div>
@@ -70,7 +70,7 @@ const SideBar = ({ onchange, checked }) => {
                 </>
               ))}
             </ul>
-            <div className="flex lg:flex-col gap-5 bg-white rounded-full p-2">
+            <div className=" hidden  md:flex lg:flex-col gap-5 bg-white rounded-full p-2">
               <img
                 src="brightness 1.svg"
                 alt=""
